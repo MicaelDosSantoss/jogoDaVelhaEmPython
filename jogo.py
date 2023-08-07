@@ -22,56 +22,91 @@ n9 = 9
 
 def marcacao(n1,n2,n3,n4,n5,n6,n7,n8,n9):
 
-    for i in range(6): 
+    while True: 
 
         print(f'\n {n1} | {n2} | {n3} \n {n4} | {n5} | {n6} \n {n7} | {n8} | {n9} \n')
+        pergunta = int(input(f'[{n1},{n2},{n3},{n4},{n5},{n6},{n7},{n8},{n9}]\nEscolha um dos números acima: '))
 
-        pergunta = int(input(f'Escolha um dos números acima: '))
+        if 1 <= pergunta <= 9:
+            if Escolhido == 'X':
 
-        restricao(pergunta)
-        
-        if Escolhido == 'X':
+                if pergunta == n1:
+                    str(n1)
+                    n1 = f'{color_green}{Escolhido}{close_color}'
 
-            if pergunta == n1:
-                str(n1)
-                n1 = f'{color_green}{Escolhido}{close_color}'
+                if pergunta == n2:
+                    str(n2)
+                    n2 = f'{color_green}{Escolhido}{close_color}'
 
-            if pergunta == n2:
-                str(n2)
-                n2 = f'{color_green}{Escolhido}{close_color}'
+                if pergunta == n3:
+                    str(n3)
+                    n3 = f'{color_green}{Escolhido}{close_color}'
+
+                if pergunta == n4:
+                    str(n4)
+                    n4 = f'{color_green}{Escolhido}{close_color}'
+
+                if pergunta == n5:
+                    str(n5)
+                    n5 = f'{color_green}{Escolhido}{close_color}'
+
+                if pergunta == n6:
+                    str(n6)
+                    n6 = f'{color_green}{Escolhido}{close_color}'
+
+                if pergunta == n7:
+                    str(n7)
+                    n7 = f'{color_green}{Escolhido}{close_color}'
+
+                if pergunta == n8:
+                    str(n8)
+                    n8 = f'{color_green}{Escolhido}{close_color}'
+
+                if pergunta == n9:
+                    str(n9)
+                    n9 = f'{color_green}{Escolhido}{close_color}'
+
+            if Escolhido == 'O':
+
+                if pergunta == n1:
+                    str(n1)
+                    n1 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n2:
+                    str(n2)
+                    n2 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n3:
+                    str(n3)
+                    n3 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n4:
+                    str(n4)
+                    n4 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n5:
+                    str(n5)
+                    n5 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n6:
+                    str(n6)
+                    n6 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n7:
+                    str(n7)
+                    n7 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n8:
+                    str(n8)
+                    n8 = f'{color_puple}{Escolhido}{close_color}'
+
+                if pergunta == n9:
+                    str(n9)
+                    n9 = f'{color_puple}{Escolhido}{close_color}'
+        else: 
+            print('Voce inseriu um número invalido, tente novamente! ')
             
-            if pergunta == n3:
-                str(n3)
-                n3 = f'{color_green}{Escolhido}{close_color}'
-            
-            if pergunta == n4:
-                str(n4)
-                n4 = f'{color_green}{Escolhido}{close_color}'
-            
-            if pergunta == n5:
-                str(n5)
-                n5 = f'{color_green}{Escolhido}{close_color}'
 
-            if pergunta == n6:
-                str(n6)
-                n6 = f'{color_green}{Escolhido}{close_color}'
-            
-            if pergunta == n7:
-                str(n7)
-                n7 = f'{color_green}{Escolhido}{close_color}'
-            
-            if pergunta == n8:
-                str(n8)
-                n8 = f'{color_green}{Escolhido}{close_color}'
-
-            if pergunta == n9:
-                str(n9)
-                n9 = f'{color_green}{Escolhido}{close_color}'
-    
     rivals(rival)
        
-       
-        
-
-
 marcacao(n1,n2,n3,n4,n5,n6,n7,n8,n9)
